@@ -3,14 +3,22 @@ title: "Rossella Pannese – Italian Home Chef"
 layout: default
 ---
 
-p hello, I'm Rossella. This is my site.
+.container
+	.row
+		.col-md-12
+			h1 Rossella Pannese
+			p.lead Hello, I'm Rossella. This is my site.
 
+.container
+	.row
+		.col-md-4
+			form(role="form", action="https://docs.google.com/forms/d/1lJbn3ASGuWVX4T78qC0DbFz0O7WVRnBfAGyDVInM0MQ/formResponse", method="POST", id="ss-form", target="_self", onsubmit="")
+				.form-group
+					label(for="entry_881627200") Name
+					input.form-control(placeholder="i.e. Katherine Tate", id="entry_881627200", type="text", name="entry.881627200", dir="auto", aria-required="true", required="required")
 
-form(action="https://docs.google.com/forms/d/1lJbn3ASGuWVX4T78qC0DbFz0O7WVRnBfAGyDVInM0MQ/formResponse", method="POST", id="ss-form", target="_self", onsubmit="")
-	label(for="entry_881627200") Name
-	input(id="entry_881627200", type="text", name="entry.881627200", dir="auto", aria-required="true", required="required")
-
-	label(for="entry_1048777040") Email
-	input(type="email", name="entry.1048777040", value="", id="entry_1048777040", dir="auto", aria-required="true", required="required", title="")
-	
-	input(type="submit", name="submit", value="Submit", id="ss-submit")
+				.form-group
+					label(for="entry_1048777040") Email
+					input.form-control(placeholder="i.e. katherine@email.com",type="email", name="entry.1048777040", value="", id="entry_1048777040", dir="auto", aria-required="true", required="required", title="")
+				
+				button.btn.btn-primary(type="submit", name="submit") Submit
