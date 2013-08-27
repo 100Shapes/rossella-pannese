@@ -7,9 +7,22 @@
 /**********************
 * MODULES
 **********************/
+.theme-block {
+  *zoom: 1;
+  border-bottom: 1px solid #ddd;
+  padding: 40px 0; }
+  .theme-block:before, .theme-block:after {
+    content: " ";
+    display: table; }
+  .theme-block:after {
+    clear: both; }
+
 /**********************
 * THEME
 **********************/
+.theme-block {
+  background: #efefef; }
+
 /**********************
 * STATES
 **********************/
