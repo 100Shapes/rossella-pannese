@@ -1,9 +1,43 @@
+@import url("http://fonts.googleapis.com/css?family=Dancing+Script:400");
 /**********************
 * VARIABLES
 **********************/
 /**********************
 * LAYOUTS
 **********************/
+.l-mediaWrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  padding-top: 25px;
+  height: 0; }
+
+.l-mediaWrapper > * {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+/**********************
+* BASE
+**********************/
+body > footer {
+  padding: 40px; }
+
+input::-webkit-input-placeholder {
+  font-style: italic;
+  color: #cccccc !important; }
+input:-moz-placeholder {
+  font-style: italic;
+  color: #cccccc !important; }
+input::-moz-placeholder {
+  font-style: italic;
+  color: #cccccc !important; }
+input:-ms-input-placeholder {
+  font-style: italic;
+  color: #cccccc !important; }
+
 /**********************
 * MODULES
 **********************/
@@ -20,6 +54,11 @@
 /**********************
 * THEME
 **********************/
+h1 {
+  font-family: 'Dancing Script', cursive;
+  font-weight: 400;
+  font-size: 42px; }
+
 .theme-block {
   background: #efefef; }
 
