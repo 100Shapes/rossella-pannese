@@ -65,6 +65,8 @@ h1 {
 
 .theme-block-intro h1 {
   font-size: 5em; }
+.theme-block-intro .lead {
+  font-size: 1.8em; }
 
 @media (max-width: 992px) {
   .becomes-centered {
