@@ -12,10 +12,16 @@ $unit: 40px;
 $white: white;
 $grey-light: #efefef;
 $grey: #ccc;
-$background-color: $white;
+$grey-dark: #aaa;
+$green: rgb(103,156,53);
+$green-dark: rgb(43,72,14);
+
+$background-color: $green;
 
 $screen-sm: 768px;
 $screen-md: 992px;
+
+$keyline: 1px solid $grey-light;
 
 /**********************
 * LAYOUTS
@@ -48,7 +54,7 @@ body > footer {
 input {
 	@include placeholder {
 		font-style: italic;
-    	color: $grey !important;
+    	color: $grey-dark !important;
 	}
 }
 
@@ -58,7 +64,7 @@ input {
 
 .theme-block {
 	@include clearfix;
-	border-bottom: 1px solid #ddd;
+	border-bottom: $keyline;
 	padding: $unit 0;
 }
 
@@ -67,13 +73,8 @@ input {
 **********************/
 
 body {
-	background-color: $background-color;
-
-	> footer {
-		background-color: $white;
-
-		
-	}
+	background-color: $white;
+	color: red;
 }
 
 h1 {
@@ -84,12 +85,26 @@ h1 {
 
 
 .theme-block {
-	background-color: $grey-light;
+	// background-color: $background-color;
+}
+
+.theme-block-intro {
+	h1 {
+		font-size: 5em;
+	}
 }
 
 .becomes-centered {
 	@media (max-width: $screen-md) {
 		text-align: center;
+	}
+}
+
+.btn-link {
+	color: red;
+
+	&:hover {
+		color: lighten(red, 10%);
 	}
 }
 

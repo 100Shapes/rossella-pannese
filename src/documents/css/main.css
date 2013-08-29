@@ -27,23 +27,23 @@ body > footer {
 
 input::-webkit-input-placeholder {
   font-style: italic;
-  color: #cccccc !important; }
+  color: #aaaaaa !important; }
 input:-moz-placeholder {
   font-style: italic;
-  color: #cccccc !important; }
+  color: #aaaaaa !important; }
 input::-moz-placeholder {
   font-style: italic;
-  color: #cccccc !important; }
+  color: #aaaaaa !important; }
 input:-ms-input-placeholder {
   font-style: italic;
-  color: #cccccc !important; }
+  color: #aaaaaa !important; }
 
 /**********************
 * MODULES
 **********************/
 .theme-block {
   *zoom: 1;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #efefef;
   padding: 40px 0; }
   .theme-block:before, .theme-block:after {
     content: " ";
@@ -55,21 +55,25 @@ input:-ms-input-placeholder {
 * THEME
 **********************/
 body {
-  background-color: white; }
-  body > footer {
-    background-color: white; }
+  background-color: white;
+  color: red; }
 
 h1 {
   font-family: 'Dancing Script', cursive;
   font-weight: 400;
   font-size: 42px; }
 
-.theme-block {
-  background-color: #efefef; }
+.theme-block-intro h1 {
+  font-size: 5em; }
 
 @media (max-width: 992px) {
   .becomes-centered {
     text-align: center; } }
+
+.btn-link {
+  color: red; }
+  .btn-link:hover {
+    color: #ff3333; }
 
 /**********************
 * STATES
