@@ -9,7 +9,13 @@
 
 $unit: 40px;
 
+$white: white;
+$grey-light: #efefef;
 $grey: #ccc;
+$background-color: $white;
+
+$screen-sm: 768px;
+$screen-md: 992px;
 
 /**********************
 * LAYOUTS
@@ -36,7 +42,7 @@ $grey: #ccc;
 **********************/
 
 body > footer {
-	padding: $unit;
+	padding: $unit 0;
 }
 
 input {
@@ -60,6 +66,15 @@ input {
 * THEME
 **********************/
 
+body {
+	background-color: $background-color;
+
+	> footer {
+		background-color: $white;
+
+		
+	}
+}
 
 h1 {
 	font-family: 'Dancing Script', cursive;
@@ -67,9 +82,20 @@ h1 {
 	font-size: 42px;
 }
 
+
 .theme-block {
-	background: #efefef;
+	background-color: $grey-light;
 }
+
+.becomes-centered {
+	@media (max-width: $screen-md) {
+		text-align: center;
+	}
+}
+
+
+
+
 
 /**********************
 * STATES

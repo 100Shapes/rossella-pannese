@@ -23,7 +23,7 @@
 * BASE
 **********************/
 body > footer {
-  padding: 40px; }
+  padding: 40px 0; }
 
 input::-webkit-input-placeholder {
   font-style: italic;
@@ -54,13 +54,22 @@ input:-ms-input-placeholder {
 /**********************
 * THEME
 **********************/
+body {
+  background-color: white; }
+  body > footer {
+    background-color: white; }
+
 h1 {
   font-family: 'Dancing Script', cursive;
   font-weight: 400;
   font-size: 42px; }
 
 .theme-block {
-  background: #efefef; }
+  background-color: #efefef; }
+
+@media (max-width: 992px) {
+  .becomes-centered {
+    text-align: center; } }
 
 /**********************
 * STATES
