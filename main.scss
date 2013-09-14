@@ -1,0 +1,131 @@
+@import "bourbon/bourbon";
+
+
+/**********************
+* VARIABLES
+**********************/
+
+@import url("http://fonts.googleapis.com/css?family=Dancing+Script:400");
+
+$unit: 40px;
+
+$white: white;
+$grey-light: #efefef;
+$grey: #ccc;
+$grey-dark: #aaa;
+$green: rgb(103,156,53);
+$green-dark: rgb(43,72,14);
+
+$background-color: $green;
+
+$screen-sm: 768px;
+$screen-md: 992px;
+
+$keyline: 1px solid $grey-light;
+
+/**********************
+* LAYOUTS
+**********************/
+
+.l-mediaWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+
+.l-mediaWrapper > * {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
+/**********************
+* BASE
+**********************/
+
+body > footer {
+	padding: $unit 0;
+}
+
+input {
+	@include placeholder {
+		font-style: italic;
+    	color: $grey-dark !important;
+	}
+}
+
+/**********************
+* MODULES
+**********************/
+
+.theme-block {
+	@include clearfix;
+	border-bottom: $keyline;
+	padding: $unit 0;
+}
+
+/* This element holds injected scripts inside iframes that in some cases may stretch layouts. So, we're just hiding it. */
+#fb-root {
+  display: none;
+}
+ 
+/* To fill the container and nothing else */
+.fb_iframe_widget, .fb_iframe_widget span, .fb_iframe_widget span iframe[style] {
+  width: 100% !important;
+}
+
+/**********************
+* THEME
+**********************/
+
+body {
+	background-color: $white;
+	color: red;
+}
+
+h1 {
+	font-family: 'Dancing Script', cursive;
+	font-weight: 400;
+	font-size: 42px;
+}
+
+
+.theme-block {
+	// background-color: $background-color;
+}
+
+.theme-block-intro {
+	h1 {
+		font-size: 5em;
+	}
+
+	.lead {
+		font-size: 1.8em;
+	}
+}
+
+.becomes-centered {
+	@media (max-width: $screen-md) {
+		text-align: center;
+	}
+}
+
+.btn-link {
+	color: red;
+
+	&:hover {
+		color: lighten(red, 10%);
+	}
+}
+
+
+
+
+
+/**********************
+* STATES
+**********************/
