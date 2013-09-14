@@ -9,6 +9,10 @@ Docpad project.
 
 	docpad run
 
+## Deploy
+
+	docpad deploy-ghpages
+
 ## View
 
-[http://redmonkey.github.io/rossella-pannese/](http://redmonkey.github.io/rossella-pannese/)
+[http://rossellapannese.com/](http://rossellapannese.com/)
